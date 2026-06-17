@@ -65,10 +65,10 @@ importers:
     dependencies:
       '@avoidstarch/ts-kit':
         specifier: 'catalog:'
-        version: https://codeload.github.com/aVOIDSTARch/ts-kit/tar.gz/c46c9f1ec7729ff5f680e548a94f9656a20bbdd3
+        version: https://codeload.github.com/aVOIDSTARch/ts-kit/tar.gz/3e825fed7e438e7be1cf828f1825d621ba19e864
     devDependencies:
       '@types/node':
-        specifier: ^25.6.2
+        specifier: ^25.9.3
         version: 25.9.3
       '@typescript/native-preview':
         specifier: 7.0.0-dev.20260509.2
@@ -103,8 +103,8 @@ importers:
 
 packages:
 
-  '@avoidstarch/ts-kit@https://codeload.github.com/aVOIDSTARch/ts-kit/tar.gz/c46c9f1ec7729ff5f680e548a94f9656a20bbdd3':
-    resolution: {gitHosted: true, integrity: sha512-JirpPRMUw1IrMgIgux2zxoRx01ZQTsUqEMfViI5YYA2JuxGKyOFpgFXGPiottjwDhmihUKjizpaAP4QXaR4F2Q==, tarball: https://codeload.github.com/aVOIDSTARch/ts-kit/tar.gz/c46c9f1ec7729ff5f680e548a94f9656a20bbdd3}
+  '@avoidstarch/ts-kit@https://codeload.github.com/aVOIDSTARch/ts-kit/tar.gz/3e825fed7e438e7be1cf828f1825d621ba19e864':
+    resolution: {gitHosted: true, integrity: sha512-n6uH5IHEGgSWWqAH5ghlvv9cpDmgjcOTtSPZeN6NcB9toV4Be/yOLkSdWicTsjqG2oK9SmWEHKCiTwzmqvn2pg==, tarball: https://codeload.github.com/aVOIDSTARch/ts-kit/tar.gz/3e825fed7e438e7be1cf828f1825d621ba19e864}
     version: 0.1.0
     peerDependencies:
       '@biomejs/js-api': ^6
@@ -1043,7 +1043,7 @@ packages:
 
 snapshots:
 
-  '@avoidstarch/ts-kit@https://codeload.github.com/aVOIDSTARch/ts-kit/tar.gz/c46c9f1ec7729ff5f680e548a94f9656a20bbdd3': {}
+  '@avoidstarch/ts-kit@https://codeload.github.com/aVOIDSTARch/ts-kit/tar.gz/3e825fed7e438e7be1cf828f1825d621ba19e864': {}
 
   '@emnapi/core@1.10.0':
     dependencies:
