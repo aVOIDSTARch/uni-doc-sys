@@ -16,10 +16,12 @@
  * population strategy.
  */
 import type { Adapter, Serialized } from "../adapters/base-adapter.ts";
-import type { UniversalDocument } from "../uni-docs/uni-doc-types.ts";
-import type { UniversalFeature } from "../uni-docs/uni-doc-types.ts";
+import type { UniversalDocument } from "../uni-docs/_uni_doc_sys_types.ts";
+import type { UniversalFeature } from "../uni-docs/_uni_doc_sys_types.ts";
+import type { SchemaVersionData } from "../version/schema-version.js";
 
-export type EngineSchemaVersion = "1.0.0";
+/** Bespoke schema version for the atom document model. Bump when THIS model changes. */
+export const baseEngineSchemaVersion: SchemaVersionData = { major: 1, minor: 0, patch: 0 };
 
 /** Registry keyed by stable format id; the adapter set IS the capability library. */
 export type AdapterRegistry = Map<string, Adapter<unknown, Serialized>>;

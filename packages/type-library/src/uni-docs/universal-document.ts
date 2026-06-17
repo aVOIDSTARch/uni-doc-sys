@@ -14,9 +14,11 @@
  *
  * Spec: uni-doc-hub-design.md §4.5
  */
-import type { SchemaVersionData } from "../version/versioning.ts";
 
-export type UniDocSchemaVersion = "1.0.0";
+import type { SchemaVersionData } from "../version/schema-version.js";
+
+/** Bespoke schema version for the atom document model. Bump when THIS model changes. */
+export const uniDocSchemaVersion: SchemaVersionData = { major: 1, minor: 0, patch: 0 };
 
 export interface UniversalDocument {
   /** Which UniDoc IR schema this instance was built against. */

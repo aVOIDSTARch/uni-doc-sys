@@ -10,8 +10,10 @@
  */
 
 import type { MaybePromise } from "../types.ts";
+import type { SchemaVersionData } from "../version/schema-version.js";
 
-export type ParserSchemaVersion = "1.0.0";
+/** Bespoke schema version for the atom document model. Bump when THIS model changes. */
+export const baseParserSchemaVersion: SchemaVersionData = { major: 1, minor: 0, patch: 0 };
 /** Lets a concrete parser be sync OR async without changing its callers. */
 
 /** Open-ended parse knobs; widen per concrete parser. */

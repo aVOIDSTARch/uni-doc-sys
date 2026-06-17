@@ -7,11 +7,13 @@
  *
  * Spec: uni-doc-hub-design.md §4.3, §4.9
  */
-export type WriterSchemaVersion = "1.0.0";
 
 /** Lets a concrete writer be sync OR async without changing its callers. */
 import type { MaybePromise } from "../types.ts";
+import type { SchemaVersionData } from "../version/schema-version.js";
 
+/** Bespoke schema version for the atom document model. Bump when THIS model changes. */
+export const baseWriterSchemaVersion: SchemaVersionData = { major: 1, minor: 0, patch: 0 };
 /** Open-ended serialize knobs; widen per concrete writer. */
 export interface WriteOptions {
   encoding?: string;

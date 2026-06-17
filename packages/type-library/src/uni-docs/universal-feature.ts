@@ -12,8 +12,10 @@
  * Spec: uni-doc-hub-design.md §4.6, §6
  */
 import type { UniversalDocument } from "./universal-document.js";
+import type { SchemaVersionData } from "../version/schema-version.js";
 
-export type UniFeatSchemaVersion = "1.0.0";
+/** Bespoke schema version for the atom document model. Bump when THIS model changes. */
+export const uniFeaturesSchemaVersion: SchemaVersionData = { major: 1, minor: 0, patch: 0 };
 /** Coarse capability tokens owned solely by the unidoc core. */
 export type UniversalFeature =
   | "images"

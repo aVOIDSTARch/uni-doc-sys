@@ -10,13 +10,15 @@
  * Imports are TYPE-ONLY, so the only runtime artifact is the class itself.
  * Spec: uni-doc-hub-design.md §4.4, §4.9, §6
  */
-import type { UniversalDocument } from "../uni-docs/uni-doc-types.ts";
+import type { UniversalDocument } from "../uni-docs/_uni_doc_sys_types.ts";
 import type { Parser, ParseOptions } from "../parsers/base-parser.ts";
 import type { Writer, WriteOptions } from "../writers/base-writer.ts";
-import type { UniversalFeature } from "../uni-docs/uni-doc-types.ts";
-import type { MaybePromise } from "../general/general-types.ts";
+import type { UniversalFeature } from "../uni-docs/_uni_doc_sys_types.ts";
+import type { MaybePromise } from "../general/_general_types.ts";
+import type { SchemaVersionData } from "../version/schema-version.js";
 
-export type AdapterSchemaVersion = "1.0.0";
+/** Bespoke schema version for the atom document model. Bump when THIS model changes. */
+export const baseAdapterSchemaVersion: SchemaVersionData = { major: 1, minor: 0, patch: 0 };
 
 /** On-the-wire form: text for text formats, bytes for binary (pdf/docx/zip). */
 export type Serialized = string | Uint8Array;

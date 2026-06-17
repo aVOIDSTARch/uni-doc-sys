@@ -30,7 +30,8 @@
  */
 import type { SchemaVersionData } from "./schema-version.js";
 
-export type SemVerSchemaVersion = "1.0.0";
+/** Bespoke schema version for the atom document model. Bump when THIS model changes. */
+export const semVerSchemaVersion: SchemaVersionData = { major: 1, minor: 0, patch: 0 };
 /** Interface for a class that has one or more incrementable values. */
 export interface Incrementable {
   increment(field: coreFieldName): Incrementable;

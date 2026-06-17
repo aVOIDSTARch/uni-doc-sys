@@ -14,7 +14,9 @@
  * dependency into every format file and break that rule, so the file stores
  * this plain shape instead.
  */
-export type SchemaSchemaVersion = "1.0.0";
+
+/** Bespoke schema version for the atom document model. Bump when THIS model changes. */
+export const schemaSchemaVersion: SchemaVersionData = { major: 1, minor: 0, patch: 0 };
 
 /**
  * The structured, serializable form of a semantic version. Mirrors the
